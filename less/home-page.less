@@ -11,7 +11,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -58,13 +58,23 @@
       }
 
       .btn {
+        .buttonStyle(#000, #fff, 8px, 2rem, 100px, 35px);
+        line-height: 3.5rem;
+
+        &:hover {
+          background: @shuttle-gray;
+        }
+
+        &:active {
+          background: @river-bend;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;

@@ -1,8 +1,20 @@
 // Mixins Here
 
+
+// Parametric Mixins
 .displayFlex(@justify, @align, @direction) {
   display: flex;
   justify-content: @justify;
   align-items: @align;
   flex-direction: @direction;
+}
+
+.buttonStyle(@bg-color, @color, @radius, @font-size, @width, @height) {
+  text-align: center;
+  background: @bg-color;
+  color: @color;
+  border-radius: @radius;
+  font-size: @font-size;
+  width: @width;
+  height: @height;
 }

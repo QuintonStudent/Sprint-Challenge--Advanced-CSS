@@ -1,1 +1,25 @@
 // Navigation code here
+
+.nav-header {
+  .displayFlex(center, center, column);
+  background: @nav-bg;
+  padding: 15px 0;
+  font-family: @nav-font;
+  border: @nav-border;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  nav {
+    .displayFlex(space-around, center, row);
+    width: 450px;
+    font-size: 1.75rem;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      padding-top: 15px;
+    }
+  }
+}
